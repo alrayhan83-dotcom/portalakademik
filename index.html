@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Akademik STTI NIIT I-Tech</title>
+    <!-- Menghubungkan ke file CSS eksternal -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header & Navigasi -->
+    <header class="navbar-container">
+        <div class="logo">STTI NIIT I-Tech</div>
+        <nav class="nav-links">
+            <a href="#">Beranda</a>
+            <a href="#">Akademik</a>
+            <a href="#">Tentang</a>
+            <a href="#">Kontak</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Selamat Datang di STTI NIIT I-Tech</h1>
+            <p>Membangun masa depan unggul di bidang teknologi dan bisnis akademik, dan pendidikan industri.</p>
+            <a href="#" class="btn-primary">Jelajahi Lebih Lanjut</a>
+        </div>
+    </section>
+
+    <!-- Tentang Kami & Fitur Utama (CSS Grid) -->
+    <section class="section-container">
+        <div class="tentang-kami">
+            <h2>Tentang Kami</h2>
+            <p>STTI NIIT I-Tech adalah institusi perguruan tinggi yang berfokus pada pengembangan kualitas sumber daya manusia di bidang teknologi informasi dan bisnis digital.</p>
+            <p>Dengan kurikulum yang selalu diperbarui sesuai kebutuhan industri, kami berkomitmen untuk melahirkan lulusan yang siap bersaing di tingkat nasional maupun internasional.</p>
+        </div>
+        
+        <div class="features-grid">
+            <div class="card">
+                <h3>Program Studi Unggulan</h3>
+                <p>STTI NIIT I-Tech menyediakan berbagai program studi unggulan seperti Teknik Informatika dan Sistem Informasi yang dirancang sesuai standar industri.</p>
+                <a href="#" class="link-detail">Lihat Detail &rarr;</a>
+            </div>
+            <div class="card">
+                <h3>Fasilitas Lengkap</h3>
+                <p>Didukung oleh fasilitas modern seperti laboratorium komputer canggih, perpustakaan digital, serta ruang kelas yang nyaman dan ber-AC.</p>
+                <a href="#" class="link-detail">Lihat Detail &rarr;</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Konten Utama: Tabel Akademik & Form Pendaftaran (Flexbox / Responsive Grid) -->
+    <section class="main-content-grid">
+        
+        <!-- Bagian Kiri: Tabel Mahasiswa -->
+        <div class="academic-table-wrapper">
+            <h2>Data Mahasiswa dan Nilai Akademik</h2>
+            <div class="table-responsive">
+                <table class="academic-table">
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>NIM</th>
+                            <th>Nama Mahasiswa</th>
+                            <th>Program Studi</th>
+                            <th>Nilai Akhir</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>20260101</td>
+                            <td>Budi Santoso</td>
+                            <td>Teknik Informatika</td>
+                            <td><span class="badge">A</span></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>20260102</td>
+                            <td>Siti Aminah</td>
+                            <td>Sistem Informasi</td>
+                            <td><span class="badge">A</span></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>20260103</td>
+                            <td>Rudi Hartono</td>
+                            <td>Teknik Informatika</td>
+                            <td><span class="badge">B</span></td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>20260104</td>
+                            <td>Dewi Lestari</td>
+                            <td>Sistem Informasi</td>
+                            <td><span class="badge">A</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Bagian Kanan: Formulir Pendaftaran -->
+        <div class="registration-form-wrapper">
+            <h2>Formulir Pendaftaran Mahasiswa</h2>
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="nama">Nama Lengkap</label>
+                    <input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Masukkan email" required>
+                </div>
+                <div class="form-group">
+                    <label for="prodi">Program Studi</label>
+                    <select id="prodi" name="prodi" required>
+                        <option value="">-- Pilih Prodi --</option>
+                        <option value="ti">Teknik Informatika</option>
+                        <option value="si">Sistem Informasi</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn-submit">Kirim Pendaftaran</button>
+            </form>
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2026 STTI NIIT I-Tech. All rights reserved.</p>
+            <div class="social-icons">
+                <a href="#">f</a>
+                <a href="#">ig</a>
+                <a href="#">in</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
